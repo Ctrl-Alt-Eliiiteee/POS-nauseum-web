@@ -9,9 +9,3 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('flutter-first-frame', function () {
-    navigator.serviceWorker.register('flutter_service_worker.js?v=1858148840');
-  });
-}
